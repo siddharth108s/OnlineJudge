@@ -1,0 +1,1628 @@
+[
+  {
+    "id": "1",
+    "title": "Two Sum",
+    "statement": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.",
+    "examples": [
+      {
+        "input": "nums = [2,7,11,15], target = 9",
+        "output": "[0,1]",
+        "explanation": "Because nums[0] + nums[1] == 9, we return [0, 1]."
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "4 9 2 7 11 15",
+        "output": "0 1",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "3 6 3 2 4",
+        "output": "1 2",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "2 6 3 3",
+        "output": "0 1",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "2",
+    "title": "Add Two Numbers",
+    "statement": "You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.",
+    "examples": [
+      {
+        "input": "l1 = [2,4,3], l2 = [5,6,4]",
+        "output": "[7,0,8]",
+        "explanation": "342 + 465 = 807."
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "3 2 4 3, 3 5 6 4",
+        "output": "7 0 8",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "1 0, 1 0",
+        "output": "0",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "1 9, 1 1",
+        "output": "0 1",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "3",
+    "title": "Longest Substring Without Repeating Characters",
+    "statement": "Given a string s, find the length of the longest substring without repeating characters.",
+    "examples": [
+      {
+        "input": "s = \"abcabcbb\"",
+        "output": "3",
+        "explanation": "The answer is \"abc\", with the length of 3."
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "abcabcbb",
+        "output": "3",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "bbbbb",
+        "output": "1",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "pwwkew",
+        "output": "3",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "4",
+    "title": "Median of Two Sorted Arrays",
+    "statement": "Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.",
+    "examples": [
+      {
+        "input": "nums1 = [1,3], nums2 = [2]",
+        "output": "2.00000",
+        "explanation": "merged array = [1,2,3] and median is 2."
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "2 1 3, 1 2",
+        "output": "2.00000",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "2 1 2, 2 3 4",
+        "output": "2.50000",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "0, 1 1",
+        "output": "1.00000",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "5",
+    "title": "Longest Palindromic Substring",
+    "statement": "Given a string s, return the longest palindromic substring in s.",
+    "examples": [
+      {
+        "input": "s = \"babad\"",
+        "output": "\"bab\"",
+        "explanation": "\"aba\" is also a valid answer."
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "babad",
+        "output": "bab",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "cbbd",
+        "output": "bb",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "a",
+        "output": "a",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "6",
+    "title": "Zigzag Conversion",
+    "statement": "The string \"PAYPALISHIRING\" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility) P A H N A P L S I I G Y I R And then read line by line: \"PAHNAPLSIIGYIR\" Write the code that will take a string and make this conversion given a number of rows:",
+    "examples": [
+      {
+        "input": "s = \"PAYPALISHIRING\", numRows = 3",
+        "output": "\"PAHNAPLSIIGYIR\"",
+        "explanation": ""
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "PAYPALISHIRING 3",
+        "output": "PAHNAPLSIIGYIR",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "PAYPALISHIRING 4",
+        "output": "PINALSIGYAHRPI",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "A 1",
+        "output": "A",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "7",
+    "title": "Reverse Integer",
+    "statement": "Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-2^31, 2^31 - 1], then return 0.",
+    "examples": [
+      {
+        "input": "x = 123",
+        "output": "321",
+        "explanation": ""
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "123",
+        "output": "321",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "-123",
+        "output": "-321",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "120",
+        "output": "21",
+        "timeLimit": 1000
+      },
+      {
+        "id": "4",
+        "input": "2147483647",
+        "output": "0",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "8",
+    "title": "String to Integer (atoi)",
+    "statement": "Implement the myAtoi(string s) function, which converts a string to a 32-bit signed integer (similar to C/C++'s atoi function).",
+    "examples": [
+      {
+        "input": "s = \"42\"",
+        "output": "42",
+        "explanation": ""
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "42",
+        "output": "42",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "   -42",
+        "output": "-42",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "4193 with words",
+        "output": "4193",
+        "timeLimit": 1000
+      },
+      {
+        "id": "4",
+        "input": "words and 987",
+        "output": "0",
+        "timeLimit": 1000
+      },
+      {
+        "id": "5",
+        "input": "-91283472332",
+        "output": "-2147483648",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "9",
+    "title": "Palindrome Number",
+    "statement": "Given an integer x, return true if x is a palindrome integer.",
+    "examples": [
+      {
+        "input": "x = 121",
+        "output": "true",
+        "explanation": ""
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "121",
+        "output": "true",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "-121",
+        "output": "false",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "10",
+        "output": "false",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "10",
+    "title": "Regular Expression Matching",
+    "statement": "Given an input string s and a pattern p, implement regular expression matching with support for '.' and '*' where: '.' Matches any single character. '*' Matches zero or more of the preceding element. The matching should cover the entire input string (not partial).",
+    "examples": [
+      {
+        "input": "s = \"aa\", p = \"a\"",
+        "output": "false",
+        "explanation": "\"a\" does not match the entire string \"aa\"."
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "aa a",
+        "output": "false",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "aa a*",
+        "output": "true",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "ab .*c",
+        "output": "false",
+        "timeLimit": 1000
+      },
+      {
+        "id": "4",
+        "input": "aab c*a*b",
+        "output": "true",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "11",
+    "title": "Container With Most Water",
+    "statement": "You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]). Find two lines that together with the x-axis form a container, such that the container contains the most water. Return the maximum amount of water a container can store.",
+    "examples": [
+      {
+        "input": "height = [1,8,6,2,5,4,8,3,7]",
+        "output": "49",
+        "explanation": "The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water the container can contain is 49."
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "9 1 8 6 2 5 4 8 3 7",
+        "output": "49",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "2 1 1",
+        "output": "1",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "12",
+    "title": "Integer to Roman",
+    "statement": "Given an integer, convert it to a roman numeral.",
+    "examples": [
+      {
+        "input": "num = 3",
+        "output": "\"III\"",
+        "explanation": ""
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "3",
+        "output": "III",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "58",
+        "output": "LVIII",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "1994",
+        "output": "MCMXCIV",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "13",
+    "title": "Roman to Integer",
+    "statement": "Given a roman numeral, convert it to an integer.",
+    "examples": [
+      {
+        "input": "s = \"III\"",
+        "output": "3",
+        "explanation": ""
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "III",
+        "output": "3",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "LVIII",
+        "output": "58",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "MCMXCIV",
+        "output": "1994",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "14",
+    "title": "Longest Common Prefix",
+    "statement": "Write a function to find the longest common prefix string amongst an array of strings. If there is no common prefix, return an empty string \"\".",
+    "examples": [
+      {
+        "input": "strs = [\"flower\",\"flow\",\"flight\"]",
+        "output": "\"fl\"",
+        "explanation": ""
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "3 flower flow flight",
+        "output": "fl",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "3 dog racecar car",
+        "output": "",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "1 a",
+        "output": "a",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "15",
+    "title": "3Sum",
+    "statement": "Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0. Notice that the solution set must not contain duplicate triplets.",
+    "examples": [
+      {
+        "input": "nums = [-1,0,1,2,-1,-4]",
+        "output": "[[-1,-1,2],[-1,0,1]]",
+        "explanation": "nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0. nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0. nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0. The distinct triplets are [-1,0,1] and [-1,-1,2]."
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "6 -1 0 1 2 -1 -4",
+        "output": "-1 -1 2\n-1 0 1",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "3 0 1 1",
+        "output": "",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "3 0 0 0",
+        "output": "0 0 0",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "16",
+    "title": "3Sum Closest",
+    "statement": "Given an array nums of n integers and an integer target, find three integers in nums such that the sum is closest to target. Return the sum of the three integers. You may assume that each input would have exactly one solution.",
+    "examples": [
+      {
+        "input": "nums = [-1,2,1,-4], target = 1",
+        "output": "2",
+        "explanation": "The sum that is closest to the target is 2. (-1 + 2 + 1 = 2)."
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "4 -1 2 1 -4, 1",
+        "output": "2",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "3 0 0 0, 1",
+        "output": "0",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "17",
+    "title": "Letter Combinations of a Phone Number",
+    "statement": "Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.",
+    "examples": [
+      {
+        "input": "digits = \"23\"",
+        "output": "[\"ad\",\"ae\",\"af\",\"bd\",\"be\",\"bf\",\"cd\",\"ce\",\"cf\"]",
+        "explanation": ""
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "23",
+        "output": "ad ae af bd be bf cd ce cf",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "",
+        "output": "",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "2",
+        "output": "a b c",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "18",
+    "title": "4Sum",
+    "statement": "Given an array nums of n integers, return an array of all unique quadruplets [nums[a], nums[b], nums[c], nums[d]] such that: 0 <= a, b, c, d < n, a, b, c, and d are distinct, and nums[a] + nums[b] + nums[c] + nums[d] == target. You may return the answer in any order.",
+    "examples": [
+      {
+        "input": "nums = [1,0,-1,0,-2,2], target = 0",
+        "output": "[[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]",
+        "explanation": ""
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "6 1 0 -1 0 -2 2, 0",
+        "output": "-2 -1 1 2\n-2 0 0 2\n-1 0 0 1",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "4 2 2 2 2, 8",
+        "output": "2 2 2 2",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "19",
+    "title": "Remove Nth Node From End of List",
+    "statement": "Given the head of a linked list, remove the nth node from the end of the list and return its head.",
+    "examples": [
+      {
+        "input": "head = [1,2,3,4,5], n = 2",
+        "output": "[1,2,3,5]",
+        "explanation": ""
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "5 1 2 3 4 5, 2",
+        "output": "1 2 3 5",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "1 1, 1",
+        "output": "",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "2 1 2, 1",
+        "output": "1",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "20",
+    "title": "Valid Parentheses",
+    "statement": "Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. An input string is valid if: Open brackets must be closed by the same type of brackets. Open brackets must be closed in the correct order. Every close bracket has a corresponding open bracket of the same type.",
+    "examples": [
+      {
+        "input": "s = \"()\"",
+        "output": "true",
+        "explanation": ""
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "()",
+        "output": "true",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "()[]{}",
+        "output": "true",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "(]",
+        "output": "false",
+        "timeLimit": 1000
+      },
+      {
+        "id": "4",
+        "input": "([)]",
+        "output": "false",
+        "timeLimit": 1000
+      },
+      {
+        "id": "5",
+        "input": "{[]}",
+        "output": "true",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "21",
+    "title": "Merge Two Sorted Lists",
+    "statement": "You are given the heads of two sorted linked lists list1 and list2. Merge the two lists in a one sorted list. The list should be made by splicing together the nodes of the first two lists. Return the head of the merged linked list.",
+    "examples": [
+      {
+        "input": "list1 = [1,2,4], list2 = [1,3,4]",
+        "output": "[1,1,2,3,4,4]",
+        "explanation": ""
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "3 1 2 4, 3 1 3 4",
+        "output": "1 1 2 3 4 4",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "0, 0",
+        "output": "",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "0, 1 0",
+        "output": "0",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "22",
+    "title": "Generate Parentheses",
+    "statement": "Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.",
+    "examples": [
+      {
+        "input": "n = 3",
+        "output": "[\"((()))\",\"(()())\",\"(())( experimenting )\",\"()(())\",\"()()()\"]",
+        "explanation": ""
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "3",
+        "output": "((())) (()()) (())() ()(()) ()()()",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "1",
+        "output": "()",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "23",
+    "title": "Merge k Sorted Lists",
+    "statement": "You are given an array of k linked-lists lists, each linked-list is sorted in ascending order. Merge all the linked-lists into one sorted linked-list and return it.",
+    "examples": [
+      {
+        "input": "lists = [[1,4,5],[1,3,4],[2,6]]",
+        "output": "[1,1,2,3,4,4,5,6]",
+        "explanation": ""
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "3 3 1 4 5 3 1 3 4 2 2 6",
+        "output": "1 1 2 3 4 4 5 6",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "0",
+        "output": "",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "1 0",
+        "output": "",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "24",
+    "title": "Swap Nodes in Pairs",
+    "statement": "Given a linked list, swap every two adjacent nodes and return its head. You must solve the problem without modifying the values in the list's nodes (i.e., only nodes themselves may be changed).",
+    "examples": [
+      {
+        "input": "head = [1,2,3,4]",
+        "output": "[2,1,4,3]",
+        "explanation": ""
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "4 1 2 3 4",
+        "output": "2 1 4 3",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "1 1",
+        "output": "1",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "0",
+        "output": "",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "25",
+    "title": "Reverse Nodes in k-Group",
+    "statement": "Given the head of a linked list, reverse the nodes of the list k at a time, and return the modified list. k is a positive integer and is less than or equal to the total number of nodes in the linked list. If the number of nodes is not a multiple of k then left-out nodes, in the end, should remain as they are.",
+    "examples": [
+      {
+        "input": "head = [1,2,3,4,5], k = 2",
+        "output": "[2,1,4,3,5]",
+        "explanation": ""
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "5 1 2 3 4 5, 2",
+        "output": "2 1 4 3 5",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "5 1 2 3 4 5, 3",
+        "output": "3 2 1 4 5",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "1 1, 1",
+        "output": "1",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "26",
+    "title": "Remove Duplicates from Sorted Array",
+    "statement": "Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same. Then return the number of unique elements in nums. Consider the number of unique elements of nums to be k, to get accepted, you need to put the final result in the first k slots of nums. It does not matter what you leave beyond the first k slots.",
+    "examples": [
+      {
+        "input": "nums = [1,1,2]",
+        "output": "2, nums = [1,2,_]",
+        "explanation": "Your function should return k = 2, with the first two elements of nums being 1 and 2 respectively. It does not matter what you leave beyond the returned k (hence they are underscores)."
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "3 1 1 2",
+        "output": "2 1 2",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "10 0 0 1 1 1 2 2 3 3 4",
+        "output": "5 0 1 2 3 4",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "27",
+    "title": "Remove Element",
+    "statement": "Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The relative order of the elements may be changed. Then return the number of elements in nums which are not equal to val. Consider the number of elements in nums which are not equal to val to be k, to get accepted, you need to put the final result in the first k slots of nums. It does not matter what you leave beyond the first k slots.",
+    "examples": [
+      {
+        "input": "nums = [3,2,2,3], val = 3",
+        "output": "2, nums = [2,2,_,_]",
+        "explanation": "Your function should return k = 2, with the first two elements of nums being 2. It does not matter what you leave beyond the returned k (hence they are underscores)."
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "4 3 2 2 3, 3",
+        "output": "2 2 2",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "8 0 1 2 2 3 0 4 2, 2",
+        "output": "5 0 1 3 0 4",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "28",
+    "title": "Find the Index of the First Occurrence in a String",
+    "statement": "Given two strings needle and haystack, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.",
+    "examples": [
+      {
+        "input": "haystack = \"sadbutsad\", needle = \"sad\"",
+        "output": "0",
+        "explanation": "sad' occurs at index 0 and 6. The first occurrence is at index 0."
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "sadbutsad sad",
+        "output": "0",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "leetcode leeto",
+        "output": "-1",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "a a",
+        "output": "0",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "29",
+    "title": "Divide Two Integers",
+    "statement": "Given two integers dividend and divisor, divide two integers without using multiplication, division, and mod operator. The integer division should truncate toward zero, which means losing its fractional part. For example, truncate(8.345) = 8 and truncate(-2.7335) = -2. Assume we are dealing with an environment that could only store integers within the 32-bit signed integer range: [-$2^{31}$, $2^{31} - 1$]. For this problem, if the quotient is strictly greater than $2^{31} - 1$, then return $2^{31} - 1$, and if the quotient is strictly less than $-2^{31}$, then return $-2^{31}$.",
+    "examples": [
+      {
+        "input": "dividend = 10, divisor = 3",
+        "output": "3",
+        "explanation": "10/3 = truncate(3.33333..) = 3."
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "10 3",
+        "output": "3",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "7 -3",
+        "output": "-2",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "-2147483648 -1",
+        "output": "2147483647",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "30",
+    "title": "Substring with Concatenation of All Words",
+    "statement": "You are given a string s and an array of strings words. All the strings in words are of the same length. A concatenated substring in s is a substring that contains all the words of words concatenated together (in any order) and in sequence. You can return the indices of all such concatenated substrings in s. You can return the answer in any order.",
+    "examples": [
+      {
+        "input": "s = \"barfoothefoobarman\", words = [\"foo\",\"bar\"]",
+        "output": "[0,9]",
+        "explanation": "The substring starting at 0 is \"barfoo\". It is the concatenation of [\"bar\",\"foo\"] which is a permutation of words. The substring starting at 9 is \"foobar\". It is the concatenation of [\"foo\",\"bar\"] which is a permutation of words."
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "barfoothefoobarman 2 foo bar",
+        "output": "0 9",
+        "timeLimit": 2000
+      },
+      {
+        "id": "2",
+        "input": "wordgoodgoodgoodbestword 4 word good best word",
+        "output": "8",
+        "timeLimit": 2000
+      },
+      {
+        "id": "3",
+        "input": "barfoofoobarthefoobarman 3 bar foo the",
+        "output": "6 9 12",
+        "timeLimit": 2000
+      }
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "31",
+    "title": "Next Permutation",
+    "statement": "A permutation of an array of integers is an arrangement of its members into a sequence or linear order. The next permutation of an array of integers is the next lexicographically greater permutation of its integer. If such an arrangement is not possible, it must be rearranged into the lowest possible order (i.e., sorted in ascending order). The replacement must be in place and use only constant extra memory.",
+    "examples": [
+      {
+        "input": "nums = [1,2,3]",
+        "output": "[1,3,2]",
+        "explanation": ""
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "3 1 2 3",
+        "output": "1 3 2",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "3 3 2 1",
+        "output": "1 2 3",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "4 1 1 5 1",
+        "output": "1 5 1 1",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "32",
+    "title": "Longest Valid Parentheses",
+    "statement": "Given a string containing just the characters '(' and ')', return the length of the longest valid (well-formed) parentheses substring.",
+    "examples": [
+      {
+        "input": "s = \"(()\"",
+        "output": "2",
+        "explanation": "The longest valid parentheses substring is \"()\"."
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "(()",
+        "output": "2",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": ")()())",
+        "output": "4",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "",
+        "output": "0",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "33",
+    "title": "Search in Rotated Sorted Array",
+    "statement": "There is an integer array nums sorted in ascending order (with distinct values). Prior to being passed to your function, nums is possibly rotated at an unknown pivot index k (1 <= k < nums.length) such that the resulting array is [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]] (0-indexed). For example, [0,1,2,4,5,6,7] might be rotated at pivot index 3 and become [4,5,6,7,0,1,2]. Given the array nums after the possible rotation and an integer target, return the index of target if it is in nums, or -1 if it is not in nums. You must write an algorithm with O(log n) runtime complexity.",
+    "examples": [
+      {
+        "input": "nums = [4,5,6,7,0,1,2], target = 0",
+        "output": "4",
+        "explanation": ""
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "7 4 5 6 7 0 1 2, 0",
+        "output": "4",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "7 4 5 6 7 0 1 2, 3",
+        "output": "-1",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "1 1, 0",
+        "output": "-1",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "34",
+    "title": "Find First and Last Position of Element in Sorted Array",
+    "statement": "Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value. If target is not found in the array, return [-1, -1]. You must write an algorithm with O(log n) runtime complexity.",
+    "examples": [
+      {
+        "input": "nums = [5,7,7,8,8,10], target = 8",
+        "output": "[3,4]",
+        "explanation": ""
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "6 5 7 7 8 8 10, 8",
+        "output": "3 4",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "6 5 7 7 8 8 10, 6",
+        "output": "-1 -1",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "0, 0",
+        "output": "-1 -1",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "35",
+    "title": "Search Insert Position",
+    "statement": "Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.",
+    "examples": [
+      {
+        "input": "nums = [1,3,5,6], target = 5",
+        "output": "2",
+        "explanation": ""
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "4 1 3 5 6, 5",
+        "output": "2",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "4 1 3 5 6, 2",
+        "output": "1",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "4 1 3 5 6, 7",
+        "output": "4",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "36",
+    "title": "Valid Sudoku",
+    "statement": "Determine if a 9 x 9 Sudoku board is valid. Only the filled cells need to be validated according to the following rules: Each of the digits 1-9 must appear exactly once in each of the nine rows. Each of the digits 1-9 must appear exactly once in each of the nine columns. Each of the digits 1-9 must appear exactly once in each of the nine 3x3 sub-boxes of the grid. Note: A Sudoku board (partially filled) could be valid but is not necessarily solvable. Only the filled cells need to be validated according to the mentioned rules. The input board will be 9x9.",
+    "examples": [
+      {
+        "input": "board = [[\"5\",\"3\",\".\",\".\",\"7\",\".\",\".\",\".\",\".\"],[\"6\",\".\",\".\",\"1\",\"9\",\"5\",\".\",\".\",\".\"],[\".\",\"9\",\"8\",\".\",\".\",\".\",\".\",\"6\",\".\"],[\"8\",\".\",\".\",\".\",\"6\",\".\",\".\",\".\",\"3\"],[\"4\",\".\",\".\",\"8\",\".\",\"3\",\".\",\".\",\"1\"],[\"7\",\".\",\".\",\".\",\"2\",\".\",\".\",\".\",\"6\"],[\".\",\"6\",\".\",\".\",\".\",\".\",\"2\",\"8\",\".\"],[\".\",\".\",\".\",\"4\",\"1\",\"9\",\".\",\".\",\"5\"],[\".\",\".\",\".\",\".\",\"8\",\".\",\".\",\"7\",\"9\"]]",
+        "output": "true",
+        "explanation": ""
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": ".........\n.........\n.........\n.........\n.........\n.........\n.........\n.........\n.........\n",
+        "output": "true",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "53..7....\n6..195...\n.98....6.\n8...6...3\n4..8.3..1\n7...2...6\n.6....28.\n...419..5\n....8..79\n",
+        "output": "true",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "83..7....\n6..195...\n.98....6.\n8...6...3\n4..8.3..1\n7...2...6\n.6....28.\n...419..5\n....8..79\n",
+        "output": "false",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "37",
+    "title": "Combination Sum",
+    "statement": "Given an array of distinct integers candidates and a target integer target, return a list of all unique combinations of candidates where the chosen numbers sum to target. You may return the combinations in any order. The same number may be chosen from candidates an unlimited number of times. Two combinations are unique if the frequency of at least one of the chosen numbers is different.",
+    "examples": [
+      {
+        "input": "candidates = [2,3,6,7], target = 7",
+        "output": "[[2,2,3],[7]]",
+        "explanation": "2 and 3 are candidates, and 2 + 2 + 3 = 7. Note that 2 can be used multiple times. 7 is also a candidate, and 7 = 7. These are the only two combinations."
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "4 2 3 6 7, 7",
+        "output": "2 2 3\n7",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "3 2 3 5, 8",
+        "output": "2 2 2 2\n2 3 3\n3 5",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "1 1, 2",
+        "output": "1 1",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "38",
+    "title": "Combination Sum II",
+    "statement": "Given a collection of candidate numbers (candidates) and a target number (target), find all unique combinations in candidates where the candidate numbers sum to target. Each number in candidates may only be used once in the combination. Note: The solution set must not contain duplicate combinations.",
+    "examples": [
+      {
+        "input": "candidates = [10,1,2,7,6,1,5], target = 8",
+        "output": "[[1,1,6],[1,2,5],[1,7],[2,6]]",
+        "explanation": ""
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "7 10 1 2 7 6 1 5, 8",
+        "output": "1 1 6\n1 2 5\n1 7\n2 6",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "5 2 5 2 1 2, 5",
+        "output": "1 2 2\n5",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "39",
+    "title": "Count and Say",
+    "statement": "The count-and-say sequence is a sequence of digit strings defined by the recursive formula: countAndSay(1) = \"1\" countAndSay(n) is the way you would \"say\" the digit string from countAndSay(n-1), which is then converted into a different digit string. To determine how you \"say\" a digit string, split it into the minimal number of groups so that each group consists of the same character. For example, the digit string \"3322251\" would be broken into \"33\", \"222\", \"5\", \"1\". Then for each group, say the number of characters, then say the character itself. Then concatenate every said digit and character for each group. For example, saying \"3322251\" would be \"two 3s, three 2s, one 5, and one 1\". Concatenate them into \"23321511\". Given a positive integer n, return the nth term of the count-and-say sequence.",
+    "examples": [
+      {
+        "input": "n = 4",
+        "output": "\"1211\"",
+        "explanation": "countAndSay(1) = \"1\" countAndSay(2) = say \"1\" = one 1 = \"11\" countAndSay(3) = say \"11\" = two 1s = \"21\" countAndSay(4) = say \"21\" = one 2 + one 1 = \"12\" + \"11\" = \"1211\""
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "1",
+        "output": "1",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "4",
+        "output": "1211",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "5",
+        "output": "111221",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "40",
+    "title": "First Missing Positive",
+    "statement": "Given an unsorted integer array nums, return the smallest missing positive integer. You must implement an algorithm that runs in O(n) time and uses O(1) auxiliary space.",
+    "examples": [
+      {
+        "input": "nums = [1,2,0]",
+        "output": "3",
+        "explanation": ""
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "3 1 2 0",
+        "output": "3",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "4 3 4 -1 1",
+        "output": "2",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "2 7 8",
+        "output": "1",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "41",
+    "title": "Trapping Rain Water",
+    "statement": "Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.",
+    "examples": [
+      {
+        "input": "height = [0,1,0,2,1,0,1,3,2,1,2,1]",
+        "output": "6",
+        "explanation": "The above elevation map (black section) is represented by array [0,1,0,2,1,0,1,3,2,1,2,1]. In this case, 6 units of rain water (blue section) are being trapped."
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "12 0 1 0 2 1 0 1 3 2 1 2 1",
+        "output": "6",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "3 4 2 3",
+        "output": "1",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "2 1 2",
+        "output": "0",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "42",
+    "title": "Multiply Strings",
+    "statement": "Given two non-negative integers, num1 and num2 represented as strings, return the product of num1 and num2, also represented as a string. Note: You must not use any built-in BigInteger library or convert the inputs to integer directly.",
+    "examples": [
+      {
+        "input": "num1 = \"2\", num2 = \"3\"",
+        "output": "\"6\"",
+        "explanation": ""
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "2 3",
+        "output": "6",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "123 456",
+        "output": "56088",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "0 0",
+        "output": "0",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "43",
+    "title": "Jump Game II",
+    "statement": "You are given a 0-indexed array of integers nums of length n. You are initially positioned at nums[0]. Each element nums[i] represents the maximum length of a forward jump from index i. In other words, if you are at nums[i], you can jump to any nums[i + j] where: 0 <= j <= nums[i] and i + j < n. Return the minimum number of jumps to reach nums[n - 1]. The test cases are generated such that you can always reach nums[n - 1].",
+    "examples": [
+      {
+        "input": "nums = [2,3,1,1,4]",
+        "output": "2",
+        "explanation": "The minimum number of jumps to reach the last index is 2. Jump 1 step from index 0 to 1, then 3 steps to the last index."
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "5 2 3 1 1 4",
+        "output": "2",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "5 2 3 0 1 4",
+        "output": "2",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "1 0",
+        "output": "0",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "44",
+    "title": "Permutations",
+    "statement": "Given an array nums of distinct integers, return all the possible permutations. You can return the answer in any order.",
+    "examples": [
+      {
+        "input": "nums = [1,2,3]",
+        "output": "[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]",
+        "explanation": ""
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "3 1 2 3",
+        "output": "1 2 3\n1 3 2\n2 1 3\n2 3 1\n3 1 2\n3 2 1",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "1 0",
+        "output": "0",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "2 1 2",
+        "output": "1 2\n2 1",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "45",
+    "title": "Permutations II",
+    "statement": "Given a collection of numbers, nums, that might contain duplicates, return all possible unique permutations in any order.",
+    "examples": [
+      {
+        "input": "nums = [1,1,2]",
+        "output": "[[1,1,2],[1,2,1],[2,1,1]]",
+        "explanation": ""
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "3 1 1 2",
+        "output": "1 1 2\n1 2 1\n2 1 1",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "3 1 2 3",
+        "output": "1 2 3\n1 3 2\n2 1 3\n2 3 1\n3 1 2\n3 2 1",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "46",
+    "title": "Rotate Image",
+    "statement": "You are given an n x n 2D matrix representing an image, rotate the image by 90 degrees (clockwise). You have to rotate the image in-place, which means you have to modify the input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation.",
+    "examples": [
+      {
+        "input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
+        "output": "[[7,4,1],[8,5,2],[9,6,3]]",
+        "explanation": ""
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "3\n1 2 3\n4 5 6\n7 8 9",
+        "output": "7 4 1\n8 5 2\n9 6 3",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "2\n1 2\n3 4",
+        "output": "3 1\n4 2",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "47",
+    "title": "Group Anagrams",
+    "statement": "Given an array of strings strs, group the anagrams together. You can return the answer in any order. An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.",
+    "examples": [
+      {
+        "input": "strs = [\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+        "output": "[[\"bat\"],[\"nat\",\"tan\"],[\"ate\",\"eat\",\"tea\"]]",
+        "explanation": ""
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "6 eat tea tan ate nat bat",
+        "output": "bat\nnat tan\nate eat tea",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "1 a",
+        "output": "a",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "0",
+        "output": "",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "48",
+    "title": "Maximum Subarray",
+    "statement": "Given an integer array nums, find the subarray with the largest sum, and return its sum.",
+    "examples": [
+      {
+        "input": "nums = [-2,1,-3,4,-1,2,1,-5,4]",
+        "output": "6",
+        "explanation": "The subarray [4,-1,2,1] has the largest sum = 6."
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "9 -2 1 -3 4 -1 2 1 -5 4",
+        "output": "6",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "1 1",
+        "output": "1",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "5 5 4 -1 7 8",
+        "output": "23",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "49",
+    "title": "Spiral Matrix",
+    "statement": "Given an m x n matrix, return all elements of the matrix in spiral order.",
+    "examples": [
+      {
+        "input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
+        "output": "[1,2,3,6,9,8,7,4,5]",
+        "explanation": ""
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "3 3\n1 2 3\n4 5 6\n7 8 9",
+        "output": "1 2 3 6 9 8 7 4 5",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "3 4\n1 2 3 4\n5 6 7 8\n9 10 11 12",
+        "output": "1 2 3 4 8 12 11 10 9 5 6 7",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "50",
+    "title": "Jump Game",
+    "statement": "You are given an integer array nums. You are initially positioned at index 0. Each element nums[i] represents your maximum jump length at that position. Return true if you can reach the last index, or false otherwise.",
+    "examples": [
+      {
+        "input": "nums = [2,3,1,1,4]",
+        "output": "true",
+        "explanation": "Jump 1 step from index 0 to 1, then 3 steps to the last index."
+      }
+    ],
+    "testCases": [
+      {
+        "id": "1",
+        "input": "5 2 3 1 1 4",
+        "output": "true",
+        "timeLimit": 1000
+      },
+      {
+        "id": "2",
+        "input": "5 3 2 1 0 4",
+        "output": "false",
+        "timeLimit": 1000
+      },
+      {
+        "id": "3",
+        "input": "1 0",
+        "output": "true",
+        "timeLimit": 1000
+      }
+    ],
+    "difficulty": "Medium"
+  }
+]
