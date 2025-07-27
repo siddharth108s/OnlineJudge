@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "node --env-file=.env --watch ../server index.js",
     "dummy":"echo hi",
-    "start": "node --env-file=.env index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
