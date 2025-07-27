@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.10",
+    "axios": "^1.11.0",
     "flowbite": "^3.1.2",
     "react": "^19.1.0",
     "react-cookie": "^8.0.1",
