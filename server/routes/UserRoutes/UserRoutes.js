@@ -52,7 +52,7 @@ router.post('/login', async (req, res) => {
     httpOnly: true,
     // secure: process.env.NODE_ENV === 'production',
     // sameSite: 'strict'
-    secure: false,
+    secure: true,
     sameSite: 'none'
   };
   res.status(200).cookie("token", token, cookieOptions).json({
