@@ -1,0 +1,13 @@
+name: Ping Website Stats
+
+on:
+  schedule:
+    - cron: '0/14 0-19 * * *'  # Every 14 mins from 00:00 to 19:59 UTC (~6 AM to 1:29 AM IST)
+
+jobs:
+  curl-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Make curl request
+        run: |
+          curl -s https://onlinejudge-backend.onrender.com/stats/website-stats
