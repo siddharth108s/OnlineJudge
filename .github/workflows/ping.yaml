@@ -1,0 +1,18 @@
+name: Ping Website Stats Every 14 Minutes
+
+on:
+  schedule:
+    # Run every 14 minutes (not natively possible with cron, so use 2 runs every 28 minutes)
+    - cron: '*/28 * * * *'
+    - cron: '14/28 * * * *'
+
+  workflow_dispatch: # (optional: allows manual trigger)
+
+jobs:
+  curl_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Curl the stats endpoint
+        run: |
+          curl -s -o /dev/null -w "%{http_code}\n" https://onlinejudge-backend.onrender.com/stats/website-stats
